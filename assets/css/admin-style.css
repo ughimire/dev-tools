@@ -1,0 +1,40 @@
+.dg-button-wrapper{
+	padding:10px 0;
+}
+
+.dg-button-wrapper button.button{
+	margin-right:10px;
+}
+
+.widget-progress-wrapper{
+	width:auto;
+	height:30px;
+	display:none;
+	margin-top:20px;
+	overflow:hidden;
+	position:relative;
+	border-radius:5px;
+	margin-right:20px;
+	box-sizing:border-box;
+	background-color:#dedede;
+}
+
+.widget-progress-bar{
+	width:0%;
+	height:30px;
+	background-color:#0085ba;
+}
+
+.widget-progress-wrapper .percentage{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	line-height: 30px;
+	font-weight: 700;
+	color: #f7f8fd;
+}
+
+body.dg-widget-completed .widget-progress-wrapper,
+body.dg-adding-widget .widget-progress-wrapper{
+	display: block;
+}
